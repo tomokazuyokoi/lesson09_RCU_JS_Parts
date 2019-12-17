@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>modal</title>
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <main>
+        <section class="work-area">
+            <h2 class="second-ttl">WORKS</h2>
+            <p class="sub-ttl">これまでの制作事例を紹介</p>
+            <div class="work-block">
+                <section class="grapihc">
+                    <h3>GRAPHIC</h3>
+                </section>
+                <section class="signage-vr">
+                    <h3>SIGNAGE / VR</h3>
+                </section>
+                <section class="ui-ux">
+                    <h3>UI / UX</h3>
+                </section>
+            </div>
+            <p class="btn"><a href="#">VIEW MORE<i class="fas fa-chevron-right"></i></a></p>
+        </section>
+        <!-- /.work-area -->
+    </main>
+
+    <!-- modalで使用する背景 -->
+    <div id="overlay">
+        <!-- #overlayの中に入れたいhtmlの一例 -->
+        <!-- <figure><img src="img/work01.png" alt=""></figure> -->
+
+        <!-- 空のfigureを用意する -->
+        <figure></figure>
+        <!-- closeボタン -->
+        <i class="fas fa-times"></i>
+    </div>
+    <!-- /#overlay -->
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="js/modal.js"></script>
+</body>
+</html>

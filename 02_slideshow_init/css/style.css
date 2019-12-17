@@ -1,0 +1,101 @@
+@charset "UTF-8";
+
+/*  body
+--------------------------------*/
+body{
+    color: #333333;
+    background: #f4f4f4;
+    font-family: "Helvetica Neue", "ヒラギノ角ゴ ProN W3", "Hiragino Kaku Gothic ProN", "Yu Gothic", YuGothic, Arial, メイリオ, Meiryo, sans-serif;
+    font-size: 13px;
+    line-height: 1.6;
+}
+
+/*  common
+--------------------------------*/
+*, *::before, *::after{
+    box-sizing: border-box;
+}
+a{
+    color: #999999;
+    text-decoration: none;
+    font-family: "Montserrat";
+}
+
+/*  header
+--------------------------------*/
+header{
+    width: 100vw;
+    height: 100vh;
+    /* background: url(../img/main.png) no-repeat center center;
+    background-size: cover; */
+    position: relative;
+    overflow: hidden;
+}
+header h1{
+    width: 130px;
+    height: 130px;
+    background: #ffffff;
+    position: absolute;
+    top: calc(50% - 65px);
+    left: calc(50% - 65px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+header nav{
+    width: 100%;
+    height: 64px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    background: rgba(255,255,255,0.8);
+}
+
+/************************
+    JavaScriptで使用
+************************/
+.slick-dots{
+    bottom: 83px;
+}
+.slick-dotted.slick-slider{
+    margin-bottom: 0;
+}
+
+
+.container{
+    width: 1140px;
+    height: 64px;
+    margin: 0 auto;
+    display: flex;
+}
+.container h2{
+    display: flex;
+    align-items: center;
+    padding-left: 8px;
+}
+.container h2 img{
+    width: 70px;
+    height: auto;
+}
+.nav-list{
+    width: 540px;
+    height: 64px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-left: auto;
+}
+.nav-list li a{
+    display: block;
+    height: 64px;
+    line-height: 64px;
+    padding: 0 8px;
+    font-size: 15px;
+}
+.nav-list li.current a{
+    color: #cccccc;
+    border-bottom: 2px solid #cccccc;
+}
+.nav-list li a:hover{
+    color: #cccccc;
+}
